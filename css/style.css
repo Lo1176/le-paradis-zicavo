@@ -219,6 +219,7 @@ h3 {
   transition: 0.25s ease;
   max-width: 100%;
   text-align: center;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.09);
 }
 
 .btn-primary {
@@ -233,6 +234,7 @@ h3 {
 
 .btn:hover {
   transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
 }
 
 /* Button containers */
