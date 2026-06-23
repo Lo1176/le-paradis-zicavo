@@ -42,6 +42,11 @@ body {
   line-height: 1.6;
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 img {
   max-width: 100%;
   display: block;
@@ -72,7 +77,7 @@ a {
   align-items: center;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .grid-2 {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -106,10 +111,12 @@ a {
 .site-nav {
   display: none;
   gap: var(--space-md);
+  align-items: center;
 }
 
 .site-nav a {
   font-size: 0.95rem;
+  white-space: nowrap;
 }
 
 .nav-toggle {
@@ -128,9 +135,11 @@ a {
   flex-direction: column;
   background: var(--color-background);
   padding: var(--space-md);
+  box-shadow: var(--shadow);
+  gap: var(--space-sm);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .site-nav {
     display: flex;
   }
@@ -143,7 +152,8 @@ a {
 /* Hero */
 .hero {
   min-height: 100vh;
-  padding: 120px 24px var(--space-xl);
+  width: 100%;
+  padding: 120px var(--space-sm) var(--space-xl);
   display: grid;
   place-items: center;
   text-align: center;
@@ -154,6 +164,7 @@ a {
 }
 
 .hero-content {
+  width: 100%;
   max-width: 760px;
 }
 
@@ -206,6 +217,8 @@ h3 {
   border-radius: 999px;
   font-weight: bold;
   transition: 0.25s ease;
+  max-width: 100%;
+  text-align: center;
 }
 
 .btn-primary {
@@ -237,26 +250,35 @@ h3 {
 /* Cards */
 .cards {
   display: grid;
+  grid-template-columns: minmax(0, 1fr);
   gap: var(--space-md);
   margin-top: 32px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .cards {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
 
 .card {
+  min-width: 0;
+  width: 100%;
+  overflow: hidden;
   background: var(--color-white);
-  padding: 18px;
+  padding: var(--space-sm);
   border-radius: var(--radius);
   box-shadow: var(--shadow);
 }
 
+.card h3,
+.card p {
+  overflow-wrap: break-word;
+}
+
 .card-image,
 .gallery div {
-  min-height: 240px;
+  /* min-height: 240px; */
   border-radius: var(--radius);
   background: #d8d0bf;
   display: grid;
@@ -293,7 +315,7 @@ h3 {
   margin-top: 32px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .gallery {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -312,7 +334,7 @@ h3 {
   gap: 12px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .footer-inner {
     flex-direction: row;
     justify-content: space-between;
