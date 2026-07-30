@@ -2,11 +2,13 @@
   --color-primary: #5d7255;
   --color-secondary: #e8dfc8;
   --color-accent: #9a6b46;
+  --color-rating: #ed8b3d;
 
   --color-text: #2f2f2f;
   --color-muted: #6f6f6f;
   --color-background: #faf8f3;
   --color-white: #ffffff;
+
 
   --font-heading: Georgia, serif;
   --font-body: Arial, sans-serif;
@@ -251,6 +253,12 @@ h3 {
   margin-top: 0;
 }
 
+/* discover-section */
+.discover-content {
+  display: grid;
+  gap: var(--space-lg);
+}
+
 /* Cards */
 .cards {
   display: grid;
@@ -304,6 +312,12 @@ h3 {
   height: 100%;
   object-fit: cover;
   display: block;
+}
+
+.rating {
+  color: var(--color-rating);
+  font-size: 1.2rem;
+  letter-spacing: 0.1em;
 }
 
 /* video */
