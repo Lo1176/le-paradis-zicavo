@@ -1,1 +1,4 @@
 dnu/
+
+# macOS
+.DS_Store
