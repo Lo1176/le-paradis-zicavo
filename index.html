@@ -3,8 +3,9 @@
 
 <head>
     <meta charset="UTF-8" />
-    <meta name="author" content="Laurent Binder">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="manifest" href="/site.webmanifest">
 
     <title>Le Paradis - Chambres d'hôtes à Zicavo en Corse</title>
     <meta name="description"
@@ -27,6 +28,7 @@
     <meta property="og:image:height" content="630">
     <meta property="og:image:alt" content="Le Paradis, chambres d'hôtes à Zicavo en Corse">
     <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:secure_url" content="https://www.zicavo-paradis.com/images/hero/og-image.jpg">
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
@@ -48,6 +50,8 @@
 
     <link rel="icon" href="/favicon/favicon.ico" sizes="any">
 
+    <meta name="application-name" content="Le Paradis">
+    <meta name="apple-mobile-web-app-title" content="Le Paradis">
     <meta name="theme-color" content="#5d7255">
 
     <script type="application/ld+json">
@@ -56,15 +60,21 @@
             "@type": "LodgingBusiness",
             "name": "Le Paradis",
             "url": "https://www.zicavo-paradis.com/",
-            "image": "https://www.zicavo-paradis.com/images/hero/og-image.jpg",
+            "image": [
+                "https://www.zicavo-paradis.com/images/hero/og-image.jpg"
+                ],
             "telephone": "+33681562219",
             "address": {
                 "@type": "PostalAddress",
-                "streetAddress": "Le Paradis, Foce,",
+                "streetAddress": "Le Paradis, Foce",
                 "postalCode": "20132",
                 "addressLocality": "Zicavo",
+                "addressRegion": "Corse-du-Sud",
                 "addressCountry": "FR"
             },
+            "areaServed": "Corse",
+            "priceRange": "€€",
+            "currenciesAccepted": "EUR",
             "geo": {
                 "@type": "GeoCoordinates",
                 "latitude": 41.9119479790792,

@@ -1,0 +1,27 @@
+{
+  "name": "Le Paradis",
+  "short_name": "Le Paradis",
+  "description": "Chambres d'hôtes à Zicavo en Corse",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#faf8f3",
+  "theme_color": "#5d7255",
+  "icons": [
+    {
+      "src": "/favicon/apple-icon-180x180.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon/favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
