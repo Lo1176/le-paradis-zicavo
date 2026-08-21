@@ -1,6 +1,3 @@
 User-agent: *
-
 Allow: /
-
-Sitemap:
-https://www.zicavo-paradis.com/sitemap.xml
+Sitemap: https://www.zicavo-paradis.com/sitemap.xml
